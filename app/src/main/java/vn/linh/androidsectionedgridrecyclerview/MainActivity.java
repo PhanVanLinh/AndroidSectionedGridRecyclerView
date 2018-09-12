@@ -26,16 +26,17 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recycler_view);
 
         ArrayList<RecyclerViewItem> data = new ArrayList<>();
+//        data.add(new ItemSection());
         data.add(new ItemImage("a", "b"));
         data.add(new ItemImage("c", "b"));
-        data.add(new ItemSection());
+//        data.add(new ItemSection());
         data.add(new ItemImage("d", "b"));
         data.add(new ItemImage("e", "b"));
         data.add(new ItemImage("f", "b"));
         data.add(new ItemImage("g", "b"));
-        data.add(new ItemSection());
+//        data.add(new ItemSection());
         data.add(new ItemImage("h", "b"));
-        data.add(new ItemSection());
+//        data.add(new ItemSection());
         data.add(new ItemImage("j", "b"));
         data.add(new ItemImage("k", "b"));
         data.add(new ItemImage("l", "b"));
@@ -58,6 +59,6 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.set(data);
         mRecyclerView.setAdapter(adapter);
-        mRecyclerView.addItemDecoration(new GridSpacingItemDecoration(3, 20, true));
+        mRecyclerView.addItemDecoration(new GridSpacingItemDecoration(numberOfColumns, 80, false));
     }
 }

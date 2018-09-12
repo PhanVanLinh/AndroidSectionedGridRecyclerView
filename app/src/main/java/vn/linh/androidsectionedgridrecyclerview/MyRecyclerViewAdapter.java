@@ -46,7 +46,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof ItemViewHolder) {
             ItemImage itemImage = (ItemImage) dataSet.get(position);
-            ((ItemViewHolder) holder).myTextView.setText(itemImage.getTitle());
+           // ((ItemViewHolder) holder).myTextView.setText(itemImage.getTitle());
         }
     }
 
@@ -65,11 +65,11 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.Vie
     }
 
     public class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        public TextView myTextView;
+        //public TextView myTextView;
 
         public ItemViewHolder(View itemView) {
             super(itemView);
-            myTextView = (TextView) itemView.findViewById(R.id.info_text);
+            //myTextView = (TextView) itemView.findViewById(R.id.info_text);
             itemView.setOnClickListener(this);
         }
 
